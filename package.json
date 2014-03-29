@@ -1,0 +1,11 @@
+{
+  "name": "yestoall-ui",
+  "theme": "ui",
+  "version": "0.1",
+  "description": "yestoall theme",
+  "license": "MIT",
+  "repository": "https://github.com/yestoall/yestoall-theme-atom",
+  "engines": {
+    "atom": ">0.40.0"
+  }
+}
