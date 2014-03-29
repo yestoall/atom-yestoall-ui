@@ -1,8 +1,9 @@
 @import "ui-variables";
+
 @tab-radius: 3px;
 @modified-icon-width: 8px;
-@tab-skew: 30deg;
-@tab-top-padding: 5px;
+@tab-skew: 0deg;
+@tab-top-padding: 10px;
 @tab-bottom-border-height: 8px;
 @tab-border: 1px solid @tab-border-color;
 @tab-bar-bottom-border-color: #111;
@@ -42,7 +43,8 @@
     border: none;
 
     &, &:before {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+        background-color: darken(@tab-background-color-active, 8%);;
+        // background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
     }
 
     &:before {
@@ -53,7 +55,7 @@
       height: @tab-height;
       width: 40px;
       border-top-left-radius: @tab-radius;
-      -webkit-transform: skewX(133deg);
+      -webkit-transform: skewX(143deg);
       box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
       border: none;
     }
@@ -106,7 +108,8 @@
     }
 
     &, &:before {
-      background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
+        background-color: @tab-background-color-active;
+    //   background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
       height: @tab-height + 1px;
     }
 

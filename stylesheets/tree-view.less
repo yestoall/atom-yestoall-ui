@@ -4,8 +4,11 @@
   font-size: @font-size;
   background: @tree-view-background-color;
 
+  .name { color: #888; }
+  .name:before { color: #444; }
+
   .selected:before {
-  	background: #444;
+    background: #333;
     box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
   }
 }
